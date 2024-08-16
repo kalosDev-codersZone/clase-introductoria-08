@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pressure unit converter</h1>
+    <h2><span id="first">unit</span> to <span id="second">unit</span></h2>
+    <hr />
+    <div class="container">
+      <div>
+        <input type="number" id="inputValue" />
+        <select name="inputUnit" id="inputUnit">
+          <option value="atm">atm</option>
+          <option value="kpa">kpa</option>
+          <option value="bar">bar</option>
+          <option value="mmhg">mmhg</option>
+        </select>
+      </div>
+      <button type="button" onclick="print()">Convert</button>
+      <div>
+        <input type="text" id="result" />
+        <select name="outputUnit" id="outputUnit">
+          <option value="atm">atm</option>
+          <option value="kpa">kpa</option>
+          <option value="bar">bar</option>
+          <option value="mmhg">mmhg</option>
+        </select>
+      </div>
+    </div>
+    <script src="./practice-08.js"></script>
+  </body>
+</html>
